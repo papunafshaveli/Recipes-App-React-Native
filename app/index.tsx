@@ -1,13 +1,18 @@
-import CategoriesScreen from "@/screens/CategoriesScreen";
-import { Text, View } from "react-native";
+import { Link } from "@react-navigation/native";
+
 import { StatusBar } from "expo-status-bar";
+
+import { View } from "react-native";
+
 import indexStyles from "./indexStyles";
 
 export default function Index() {
   return (
     <View style={indexStyles.indexContainer}>
       <StatusBar style="light" />
-      <CategoriesScreen />
+      <Link style={indexStyles.link} screen={"MealsCategories"}>
+        Get Started!
+      </Link>
     </View>
   );
 }
