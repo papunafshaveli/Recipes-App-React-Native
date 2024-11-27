@@ -8,6 +8,7 @@ import Index from "./index";
 
 import CategoriesScreen from "@/screens/categories-screen/CategoriesScreen";
 import MealsOverviewScreen from "@/screens/meals-overview-screen/MealsOverviewScreen";
+import SelectedMeal from "@/screens/selected-meal/SelectedMeal";
 
 export default function RootLayout() {
   const Stack = createNativeStackNavigator();
@@ -33,6 +34,7 @@ export default function RootLayout() {
             }}
           />
           <Stack.Screen name="MealsOverview" component={MealsOverviewScreen} />
+          <Stack.Screen name="SelectedMeal" component={SelectedMeal} />
         </Stack.Navigator>
       </NavigationContainer>
     </NavigationIndependentTree>

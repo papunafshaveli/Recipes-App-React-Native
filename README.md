@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+## Recipes App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application that allows users to view a list of meal categories and the meals under each category. The app uses React Navigation to navigate between different screens, and it demonstrates how to pass parameters using the navigation stack.
 
-## Get started
+## Features
 
-1. Install dependencies
+Category Listing: Displays a grid of categories, and when a category is selected, it navigates to the meal listing screen for that category.
+Meal Listing: Shows meals that belong to the selected category. Each meal item contains information like title, image, duration, complexity, and affordability.
 
-   ```bash
-   npm install
-   ```
+## Technologies Used
 
-2. Start the app
+React Native: For building the mobile app.
+React Navigation: For handling navigation between different screens.
+TypeScript: For type safety in the code.
+FlatList: For rendering lists of categories and meals.
+React Hooks: useNavigation, useRoute, useLayoutEffect for managing navigation and screen setup.
 
-   ```bash
-    npx expo start
-   ```
+## Screens
 
-In the output, you'll find options to open the app in a
+CategoriesScreen: Displays a list of meal categories in a grid. When a category is clicked, it navigates to the MealsOverviewScreen.
+MealsOverviewScreen: Displays a list of meals for the selected category. It uses parameters passed through the navigation stack to filter meals by category.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Notes
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is a small sample app built with React Native and React Navigation to demonstrate the use of navigation, useNavigation, useRoute, and TypeScript.
+Navigation between screens is achieved using react-navigation library.
+The app uses dummy data for categories and meals.
